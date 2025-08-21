@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>News Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h2>News Feed</h2>
+    <div class="controls">
+      <input id="searchInput" placeholder="Search news..." />
+      <button id="searchBtn">Search</button>
+      <select id="category">
+        <option value="">All</option>
+        <option value="technology">Technology</option>
+        <option value="sports">Sports</option>
+        <option value="business">Business</option>
+        <option value="health">Health</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="science">Science</option>
+      </select>
+      <button id="darkToggle">🌙</button>
+      <button id="logoutBtn">Logout</button>
+      <div id="api-usage-display" class="usage-display"></div>
+    </div>
+  </header>
+
+  <main>
+    <h3>Top News</h3>
+    <div id="news-container" class="grid"></div>
+
+    <h3>⭐ My Favorites</h3>
+    <div id="favorites-container" class="grid"></div>
+  </main>
+
+  <script type="module" src="news.js"></script>
+</body>
+</html>

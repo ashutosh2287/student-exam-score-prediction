@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# VS Code workspace settings
+.vscode/
+
+# Supabase local branches and temp files
+supabase/.branches/
+supabase/.temp/
+
+# dotenv files
+.env
+.env.keys
+.env.local
+.env.*.local
+
+# Supabase CLI config (contains project ref and secrets)
+supabase/config.toml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional build output (if you have a dist/ or build/ folder)
+dist/
+build/
